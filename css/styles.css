@@ -458,3 +458,10 @@ label.radio:has(input:checked){border-color:var(--purple-solid);background:rgba(
 @media (min-width:900px) and (max-width:1180px){
   .hicons{width:auto;min-width:100px;gap:12px}
 }
+
+/* Página Local en desktop: la tarjeta ocupa todo el ancho y las columnas se alinean arriba */
+@media (min-width:900px){
+  .page .local{max-width:none;width:100%}
+  .local-cols{align-items:start}
+  .local-cols .form .h3{margin-top:0}
+}
