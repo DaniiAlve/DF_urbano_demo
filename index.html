@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DF urbano</title>
+  <meta name="description" content="DF urbano — pantalones. Maqueta MVP.">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Inter:wght@500&family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="phone" id="phone">
+
+    <div class="ticker"><div class="ticker-track" id="ticker"></div></div>
+
+    <header class="header">
+      <button class="hbtn menu" id="menuBtn" aria-label="Menú"><img src="assets/menu.svg" alt=""></button>
+      <a class="logo" href="#/" aria-label="DF urbano, inicio">DF urbano</a>
+      <nav class="dnav" aria-label="Principal">
+        <a href="#/catalogo/todo">Pantalones</a>
+        <a href="#/catalogo/vivo">Vivo lateral</a>
+        <a href="#/catalogo/lisos">Lisos</a>
+        <a href="#/catalogo/manchados">Manchados</a>
+        <a href="#/catalogo/camuflados">Camuflados</a>
+        <a href="#/local">Local</a>
+      </nav>
+      <div class="hicons">
+        <a class="hbtn user" id="userBtn" href="#/login" aria-label="Iniciar sesión"><img src="assets/user.svg" alt=""></a>
+        <button class="hbtn search" id="searchBtn" aria-label="Buscar"><img src="assets/search.svg" alt=""></button>
+        <button class="hbtn cart" id="cartBtn" aria-label="Carrito"><img src="assets/cart.svg" alt=""><span class="badge" id="badge" hidden>0</span></button>
+      </div>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="footer">
+      <div class="wrap foot-grid">
+        <div><a class="flogo" href="#/">DF urbano</a><p>Pantalones.<br>Flores, Buenos Aires.</p></div>
+        <div><h4>Tienda</h4><a href="#/catalogo/todo">Todos los pantalones</a><a href="#/catalogo/vivo">Vivo lateral</a><a href="#/catalogo/lisos">Lisos</a><a href="#/catalogo/manchados">Manchados</a><a href="#/catalogo/camuflados">Camuflados</a></div>
+        <div><h4>Ayuda</h4><a href="#/local">Local y contacto</a><a href="#/info/envios">Envíos</a><a href="#/info/cambios">Cambios y devoluciones</a><a href="#/info/pagos">Medios de pago</a></div>
+        <div><h4>Seguinos</h4><a href="#/local">Instagram</a><a href="#/local">Whatsapp</a></div>
+        <p class="copy">© 2026 DF urbano · Maqueta MVP: productos, precios y compras son simulados</p>
+      </div>
+    </footer>
+
+    <div class="scrim" id="scrim"></div>
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-head"><b id="drawerTitle">MENU</b><button id="drawerClose" aria-label="Cerrar">✕</button></div>
+      <div class="drawer-body" id="drawerBody"></div>
+    </aside>
+    <div class="toast" id="toast" role="status"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
